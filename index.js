@@ -64,7 +64,6 @@ app.get('/article/:articaleId', async (req, res) => {
     const id = req.params.articaleId;
     const articale = await Article.findById(id); 
     res.json(articale);
-
 })
 
 app.listen(5000, () => {
